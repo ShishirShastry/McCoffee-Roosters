@@ -1,0 +1,172 @@
+body {
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 0;
+    font-family: Helvetica, Helvetica, Arial, sans-serif;
+}
+
+.container {
+    margin: auto;
+    overflow: hidden;
+    width: 82%;
+}
+
+#mainheader {
+    background-color: brown;
+    color: whitesmoke;
+    font-style: italic;
+    font-family: Membra;
+    text-align: center;
+    padding: 20px 0;
+    opacity: 0;
+    animation: slideIn 1s forwards; /* Animation for top title bar */
+}
+
+#navbar {
+    background-color: black;
+    color: bisque;
+    padding: 10px 0;
+    margin: 0;
+    opacity: 0;
+    animation: slideIn 1s forwards; /* Animation for navigation bar */
+}
+
+#navbar ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+#navbar li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+#navbar a {
+    color: blueviolet;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, transform 0.3s ease;
+}
+
+#navbar a:hover {
+    background-color: #444;
+    border-radius: 5px;
+    transform: scale(1.1);
+}
+
+#showcase {
+    background-image: url(stretched-2400-1350-508562.jpg);
+    color: white;
+    min-height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#showcase h1 {
+    font-size: 50px;
+    line-height: 1.6;
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Fade-in effect for Welcome */
+}
+
+#main {
+    float: left;
+    width: 65%;
+    box-sizing: border-box;
+    padding-right: 20px;
+}
+
+#sidebar {
+    float: right;
+    width: 30%;
+    box-sizing: border-box;
+    background-color: green;
+    color: white;
+    padding: 20px;
+}
+
+#sidebar button {
+    display: inline-block;
+    border-radius: 3px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 10px 20px;
+    width: auto;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 2s forwards 1s; /* Fade-in effect for the button */
+}
+
+#sidebar button:hover {
+    background-color: #e03e18;
+    transform: scale(1.1);
+}
+
+#mainfooter {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#main h2, #main p {
+    opacity: 0;
+    animation: fadeIn 2s forwards; /* Fade-in effect for main text */
+}
+
+#sidebar h2, #sidebar p {
+    opacity: 0;
+    animation: fadeIn 2s forwards 1s; /* Fade-in effect for sidebar text */
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    #main, #sidebar {
+        width: 100%;
+        float: none;
+        padding: 10px;
+    }
+
+    #showcase h1 {
+        font-size: 30px;
+    }
+
+    #navbar ul {
+        text-align: left;
+    }
+}

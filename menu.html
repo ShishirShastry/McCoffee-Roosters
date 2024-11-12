@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu Page</title>
+  <link rel="stylesheet" type="text/css" href="stylem.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Menu</h1>
+    
+    <div class="menu-section">
+      <h2>Breakfast</h2>
+      <div class="menu-item">
+        <h3>Bagel</h3>
+        <p>Choice of plain, sesame, or everything bagel with cream cheese</p>
+        <span class="price">₹399</span>
+      </div>
+      <div class="menu-item">
+        <h3>Avocado Toast</h3>
+        <p>Avocado spread on whole wheat toast with tomato</p>
+        <span class="price">₹299</span>
+      </div>
+      <div class="menu-item">
+        <h3>Pancakes</h3>
+        <p>Fluffy pancakes with maple syrup and butter</p>
+        <span class="price">₹499</span>
+      </div>
+      <div class="menu-item">
+        <h3>Eggs Benedict</h3>
+        <p>Poached eggs with hollandaise sauce on an English muffin</p>
+        <span class="price">₹799</span>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Lunch</h2>
+      <div class="menu-item">
+        <h3>Grilled Cheese Sandwich</h3>
+        <p>Classic American grilled cheese on bread</p>
+        <span class="price">₹399</span>
+      </div>
+      <div class="menu-item">
+        <h3>Caesar Salad</h3>
+        <p>Romaine lettuce, croutons, Parmesan cheese, and Caesar dressing</p>
+        <span class="price">₹100</span>
+      </div>
+      <div class="menu-item">
+        <h3>Chicken Wrap</h3>
+        <p>Grilled chicken, veggies, and ranch dressing wrapped in a tortilla</p>
+        <span class="price">₹499</span>
+      </div>
+      <div class="menu-item">
+        <h3>Veggie Burger</h3>
+        <p>Vegetarian patty with lettuce, tomato, and cheese in a bun</p>
+        <span class="price">₹350</span>
+      </div>
+    </div>
+
+    <div class="menu-section">
+      <h2>Beverages</h2>
+      <div class="menu-item">
+        <h3>Coffee</h3>
+        <p>Regular or decaf coffee, served hot or iced</p>
+        <span class="price">₹50</span>
+      </div>
+      <div class="menu-item">
+        <h3>Smoothie</h3>
+        <p>Strawberry banana smoothie with almond milk and honey</p>
+        <span class="price">₹40</span>
+      </div>
+      <div class="menu-item">
+        <h3>Green Tea</h3>
+        <p>Freshly brewed green tea with a hint of lemon</p>
+        <span class="price">₹30</span>
+      </div>
+      <div class="menu-item">
+        <h3>Fresh Juice</h3>
+        <p>Freshly squeezed orange juice or apple juice</p>
+        <span class="price">₹60</span>
+      </div>
+    </div>
+
+    <hr>
+    <h2 class="form-title">Order Form</h2>
+    <form class="order-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br>
+
+      <label for="address">Shipping Address:</label>
+      <textarea id="address" name="address" required></textarea><br>
+
+      <label for="product">Product:</label>
+      <select id="product" name="product">
+        <option value="Bagel">Bagel</option>
+        <option value="Avocado Toast">Avocado Toast</option>
+        <option value="Pancakes">Pancakes</option>
+        <option value="Eggs Benedict">Eggs Benedict</option>
+        <option value="Grilled Cheese Sandwich">Grilled Cheese Sandwich</option>
+        <option value="Caesar Salad">Caesar Salad</option>
+        <option value="Chicken Wrap">Chicken Wrap</option>
+        <option value="Veggie Burger">Veggie Burger</option>
+        <option value="Coffee">Coffee</option>
+        <option value="Smoothie">Smoothie</option>
+        <option value="Green Tea">Green Tea</option>
+        <option value="Fresh Juice">Fresh Juice</option>
+      </select><br><br>
+
+      <input type="submit" value="Place Order">
+    </form>
+
+    <center>
+      <button class="button">
+        <a href="Mc Coffee Roosters.html" style="text-decoration: none;color:darkblue">Home</a>
+      </button>
+    </center>
+  </div>
+
+  <!-- Link to the order.js file -->
+  <script src="order.js"></script>
+</body>
+</html>
